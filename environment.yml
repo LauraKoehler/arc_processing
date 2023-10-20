@@ -1,0 +1,19 @@
+name: shippy-dev
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - cartopy
+  - matplotlib
+  - xarray
+  - numpy
+  - metpy
+  - scipy
+  - pyyaml
+  - netcdf4
+  - datetime
+  - pysonde
+  - dask
+  - pip
+  - pip:
+    - pint_xarray

@@ -1,0 +1,102 @@
+440-870nm_Angstrom_Exponent:
+  instrument: Microtops
+  long_name: Angstrom exponent of aerosol in air (440-870nm)
+  standard_name: angstrom_exponent_of_ambient_aerosol_in_air
+  units: '1'
+  varname: angstrom_exp
+AOD_380nm:
+  instrument: Microtops
+  long_name: aerosol optical thickness at 380nm
+  standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+  units: '1'
+  varname: aot_380
+AOD_440nm:
+  instrument: Microtops
+  long_name: aerosol optical thickness at 440nm
+  standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+  units: '1'
+  varname: aot_440
+AOD_500nm:
+  instrument: Microtops
+  long_name: aerosol optical thickness at 500nm
+  standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+  units: '1'
+  varname: aot_500
+AOD_675nm:
+  instrument: Microtops
+  long_name: aerosol optical thickness at 675nm
+  standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+  units: '1'
+  varname: aot_675
+AOD_870nm:
+  instrument: Microtops
+  long_name: aerosol optical thickness at 870nm
+  standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+  units: '1'
+  varname: aot_870
+Air Mass:
+  instrument: Microtops
+  long_name: air mass coefficient
+  units: '1'
+  varname: air_mass
+Latitude:
+  axis: Y
+  instrument: Microtops
+  long_name: latitude
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+Longitude:
+  axis: X
+  instrument: Microtops
+  long_name: longitude
+  standard_name: longitude
+  units: degree_east
+  varname: lon
+Number_of_Observations:
+  instrument: Microtops
+  long_name: number of obervations
+  standard_name: number_of_observations
+  units: '1'
+  varname: number_obs
+STD_380nm:
+  instrument: Microtops
+  long_name: standard deviation of aerosol optical thickness at 380nm
+  units: '1'
+  varname: aot_380_std
+STD_440-870nm_Angstrom_Exponent:
+  instrument: Microtops
+  long_name: standard deviation of Angstrom exponent of aerosol in air (440-870nm)
+  units: '1'
+  varname: angstrom_exp_std
+STD_440nm:
+  instrument: Microtops
+  long_name: standard deviation of aerosol optical thickness at 440nm
+  units: '1'
+  varname: aot_440_std
+STD_500nm:
+  instrument: Microtops
+  long_name: standard deviation of aerosol optical thickness at 500nm
+  units: '1'
+  varname: aot_500_std
+STD_675nm:
+  instrument: Microtops
+  long_name: standard deviation of aerosol optical thickness at 675nm
+  units: '1'
+  varname: aot_675_std
+STD_870nm:
+  instrument: Microtops
+  long_name: standard deviation of aerosol optical thickness at 870nm
+  units: '1'
+  varname: aot_870_std
+STD_Water_Vapor(cm):
+  instrument: Microtops
+  long_name: standard deviation of column integrated water vapor
+  units: m
+  varname: cwv_std
+Water Vapor(cm):
+  instrument: Microtops
+  long_name: column integrated water vapor
+  standard_name: lwe_thickness_of_atmosphere_mass_content_of_water_vapor
+  units: m
+  varname: cwv

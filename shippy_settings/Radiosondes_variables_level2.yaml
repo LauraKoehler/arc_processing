@@ -1,0 +1,125 @@
+N_gps:
+  instrument: Vaisala RS41
+  long_name: number of observations GPS
+  standard_name: number_of_observations
+  units: '1'
+  varname: N_gps
+N_ptu:
+  instrument: Vaisala RS41
+  long_name: number of observations PTU
+  standard_name: number_of_observations
+  units: '1'
+  varname: N_ptu
+alt:
+  instrument: Vaisala RS41
+  long_name: altitude
+  postive: up
+  standard_name: altitude
+  units: m
+  varname: alt
+alt_bnds:
+  comment: (lower bound, upper bound]
+  long_name: bounds of altitude steps
+  units: m
+  varname: alt_bnds
+ascent_flag:
+  flag_meanings: ascending descending
+  flag_values: '[1,0]'
+  long_name: indicator of vertical flight direction
+  units: '1'
+  varname: ascent_flag
+dp:
+  instrument: Vaisala RS41
+  long_name: dew point temperature
+  standard_name: dew_point_temperature
+  units: K
+  varname: dp
+dz:
+  instrument: Vaisala RS41
+  long_name: ascent/descent rate of measuring device
+  units: m s-1
+  varname: dz
+flight_time:
+  varname: time
+lat:
+  axis: Y
+  instrument: Vaisala RS41
+  long_name: latitude
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+launch_time:
+  varname: start_time
+lon:
+  axis: X
+  instrument: Vaisala RS41
+  long_name: longitude
+  standard_name: longitude
+  units: degree_east
+  varname: lon
+m_gps:
+  units: '1'
+  varname: m_gps
+m_ptu:
+  units: '1'
+  varname: m_ptu
+mr:
+  instrument: Vaisala RS41
+  long_name: water vapor mixing ratio
+  standard_name: humidity_mixing_ratio
+  units: '1'
+  varname: mr
+p:
+  instrument: Vaisala RS41
+  long_name: air pressure
+  standard_name: air_pressure
+  units: Pa
+  varname: p_air
+q:
+  instrument: Vaisala RS41
+  long_name: specific humidity
+  standard_name: specific_humidity
+  units: '1'
+  varname: q
+rh:
+  instrument: Vaisala RS41
+  long_name: relative humidity
+  standard_name: relative_humidity
+  units: '1'
+  varname: rh
+ta:
+  instrument: Vaisala RS41
+  long_name: air temperature
+  standard_name: air_temperature
+  units: K
+  varname: t_air
+theta:
+  instrument: Vaisala RS41
+  long_name: potential temperature
+  standard_name: air_potential_temperature
+  units: K
+  varname: theta
+u:
+  instrument: Vaisala RS41
+  long_name: u-component of the wind
+  standard_name: eastward_wind
+  units: m s-1
+  varname: u_air
+v:
+  instrument: Vaisala RS41
+  long_name: v-component of the wind
+  standard_name: northward_wind
+  units: m s-1
+  varname: v_air
+wdir:
+  instrument: Vaisala RS41
+  long_name: wind direction
+  standard_name: wind_from_direction
+  units: degree
+  varname: wdir
+wspd:
+  instrument: Vaisala RS41
+  long_name: wind speed
+  standard_name: wind_speed
+  units: m s-1
+  varname: wspd

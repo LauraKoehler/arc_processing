@@ -1,0 +1,77 @@
+alt:
+  instrument: Vaisala RS41
+  long_name: altitude
+  standard_name: altitude
+  units: m
+  varname: alt
+alt_WGS84:
+  instrument: Vaisala RS41
+  long_name: height above reference ellipsoid
+  standard_name: height_above_reference_ellipsoid
+  units: m
+  varname: alt_WGS84
+dp:
+  instrument: Vaisala RS41
+  long_name: dew point temperature
+  standard_name: dew_point_temperature
+  units: K
+  varname: dp
+dz:
+  instrument: Vaisala RS41
+  long_name: ascent/descent rate of measuring device
+  units: m s-1
+  varname: dz
+flight_time:
+  varname: time
+lat:
+  axis: Y
+  instrument: Vaisala RS41
+  long_name: latitude
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+launch_time:
+  varname: start_time
+lon:
+  axis: X
+  instrument: Vaisala RS41
+  long_name: longitude
+  standard_name: longitude
+  units: degree_east
+  varname: lon
+mr:
+  instrument: Vaisala RS41
+  long_name: water vapor mixing ratio
+  standard_name: humidity_mixing_ratio
+  units: '1'
+  varname: mr
+p:
+  instrument: Vaisala RS41
+  long_name: air pressure
+  standard_name: air_pressure
+  units: Pa
+  varname: p_air
+rh:
+  instrument: Vaisala RS41
+  long_name: relative humidity
+  standard_name: relative_humidity
+  units: '1'
+  varname: rh
+ta:
+  instrument: Vaisala RS41
+  long_name: air temperature
+  standard_name: air_temperature
+  units: K
+  varname: t_air
+wdir:
+  instrument: Vaisala RS41
+  long_name: wind direction
+  standard_name: wind_from_direction
+  units: degree
+  varname: wdir
+wspd:
+  instrument: Vaisala RS41
+  long_name: wind speed
+  standard_name: wind_speed
+  units: m s-1
+  varname: wspd

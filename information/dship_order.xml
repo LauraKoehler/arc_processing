@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<export type="datalog">
+   <order time="1677001521">
+      <output exportevents="false" limitfilesize="false" type="TXT" user="Julia">DShipDataAllCrossings</output>
+   </order>
+   <description>
+      <time filtered="true">
+         <starttime>1674309928</starttime>
+         <endtime>1676985431</endtime>
+         <interval displayunit="s">1000</interval>
+      </time>
+      <fileformat datetimeformat="seconds since 1970" decimalsymbol="." endofrecordmarker="\n" fillvalue="true" headerrow="true" separator=";"/>
+      <channellist errorvaluealphanumeric="nan" errorvaluenumeric="nan" fittoformat="false" includeinvalidvalues="false" skipinvalidlines="true">
+         <channel angle="none" fieldwidth="0" format="std_time" max="false" mean="false" meanvalidity="false" min="false" precision="0" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">SYS.CALC.Timestamp</channel>
+         <channel angle="none" fieldwidth="0" format="54° 12.345' N" max="false" mean="false" meanvalidity="false" min="false" precision="6" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">SYS.STR.PosLat</channel>
+         <channel angle="none" fieldwidth="0" format="154° 12.345' E" max="false" mean="false" meanvalidity="false" min="false" precision="6" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">SYS.STR.PosLon</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="3" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Air_pressure2</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="2" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Air_temperature</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="2" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Humidity</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Water_temperature</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="2" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Absolute_wind_direction</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="2" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Absolute_wind_speed</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">SYS.CALC.SPEED_kmh</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Global_radiation.SMSMN.GS</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Global_radiation.SMSMN.IR</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="3" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Seapath.PSXN.Heave</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="3" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Seapath.PSXN.Pitch</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="3" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Seapath.PSXN.Roll</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Current_Direction</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Current_Speed</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Mean_Period</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Direction</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Length</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Period</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Significant_Wave_Height</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">SYS.STR.DPT</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">SYS.STR.HDG</channel>
+         <channel fieldwidth="0" format="abc" precision="0" samples="false" spot="true" valuevalidity="false">SYS.STR.HDG_O</channel>
+         <channel fieldwidth="0" format="abc" precision="0" samples="false" spot="true" valuevalidity="false">SYS.STR.PosLat_O</channel>
+         <channel fieldwidth="0" format="abc" precision="0" samples="false" spot="true" valuevalidity="false">SYS.STR.PosLon_O</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Direction_first</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Direction_Second</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Length_first</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Length_second</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Period_first</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Wamos.PWAM.Peak_Wave_Period_Second</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Air_pressure</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Relative_wind_direction</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="1" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">Weatherstation.PEUMA.Relative_wind_speed</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="5" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">RSWS.RSSMC.SMCChlA</channel>
+         <channel angle="none" fieldwidth="0" format="123" max="false" mean="false" meanvalidity="false" min="false" precision="0" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">RSWS.RSSMC.SMCChlAraw</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="2" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">RSWS.RSSMC.SMCC</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="2" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">RSWS.RSSMC.SMCS</channel>
+         <channel angle="none" fieldwidth="0" format="1.23" max="false" mean="false" meanvalidity="false" min="false" precision="3" samples="false" spot="true" stddev="false" valuevalidity="false" variance="false">RSWS.RSSMC.SMCtr</channel>
+      </channellist>
+   </description>
+</export>

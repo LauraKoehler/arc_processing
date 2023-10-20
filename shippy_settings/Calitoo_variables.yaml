@@ -1,0 +1,68 @@
+AOT465:
+  instrument: Calitoo
+  long_name: aerosol optical depth at 465nm
+  standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+  units: '1'
+  varname: aot_465
+AOT540:
+  instrument: Calitoo
+  long_name: aerosol optical depth at 540nm
+  standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+  units: '1'
+  varname: aot_540
+AOT619:
+  instrument: Calitoo
+  long_name: aerosol optical depth at 619nm
+  standard_name: atmosphere_optical_thickness_due_to_ambient_aerosol_particles
+  units: '1'
+  varname: aot_619
+ATO:
+  instrument: GOME-2B
+  long_name: assimilated total ozone
+  standard_name: atmosphere_mole_content_of_ozone
+  units: mol m-2
+  varname: ato
+Altitude:
+  instrument: Calitoo
+  long_name: altitude (sensor level)
+  standard_name: altitude
+  units: m
+  varname: alt
+Angstrom_465_619:
+  instrument: Calitoo
+  long_name: Angstrom exponent of aerosol in air (465-619nm)
+  standard_name: angstrom_exponent_of_ambient_aerosol_in_air
+  units: '1'
+  varname: angstrom_exp
+Elevation:
+  instrument: Calitoo
+  long_name: solar elevation angle
+  standard_name: solar_elevation_angle
+  units: degree
+  varname: elevation
+Pressure:
+  instrument: Calitoo
+  long_name: air pressure
+  standard_name: air_pressure (sensor level)
+  units: Pa
+  varname: p_air
+Temperature:
+  instrument: Calitoo
+  long_name: air temperature
+  standard_name: air_temperature (sensor level)
+  units: K
+  varname: t_air
+latitude:
+  axis: Y
+  instrument: Calitoo
+  long_name: latitude
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+longitude:
+  axis: X
+  instrument: Calitoo
+  long_name: longitude
+  standard_name: longitude
+  units: degree_east
+  varname: lon

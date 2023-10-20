@@ -1,0 +1,80 @@
+DEPTH:
+  instrument: CTD
+  long_name: depth
+  postive: down
+  standard_name: depth
+  units: m
+  varname: depth
+PRES:
+  instrument: SBE 9plus (CTD)
+  long_name: sea water pressure
+  standard_name: sea_water_pressure
+  units: dbar
+  varname: p_sw
+PSAL:
+  instrument: SBE 4C (CTD)
+  long_name: sea water salinity
+  standard_name: sea_water_practical_salinity
+  units: '1'
+  varname: salinity
+TEMP:
+  instrument: SBE 3plus (CTD)
+  long_name: sea water temperature
+  standard_name: sea_water_temperature
+  units: K
+  varname: t_sw
+alt:
+  instrument: CTD
+  long_name: altitude
+  postive: up
+  standard_name: altitude
+  units: m
+  varname: alt
+c0mSPercm:
+  instrument: SBE 4C (CTD)
+  long_name: sea water electrical conductivity
+  standard_name: sea_water_electrical_conductivity
+  units: S m-1
+  varname: conductivity
+density:
+  instrument: SBE (CTD)
+  long_name: sea water density
+  standard_name: sea_water_density
+  units: kg m-3
+  varname: rho_sw
+flECO-AFL:
+  instrument: WET Labs ECO-AFL/FL (CTD)
+  long_name: fluorescence
+  units: kg m-3
+  varname: fluorescence
+lat:
+  axis: Y
+  instrument: Seapath (DShip)
+  long_name: latitude
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+lon:
+  axis: X
+  instrument: Seapath (DShip)
+  long_name: longitude
+  standard_name: longitude
+  units: degree_east
+  varname: lon
+n2satMgPerL:
+  instrument: SBE (CTD)
+  long_name: nitrogen saturation
+  units: kg m-3
+  varname: nitrogen
+sbeox0PS:
+  instrument: SBE 43 (CTD)
+  long_name: fractional saturation of oxygen in sea water
+  standard_name: fractional_saturation_of_oxygen_in_sea_water
+  units: '1'
+  varname: oxygen
+turbWETntu0:
+  instrument: WET Labs ECO (CTD)
+  long_name: sea water turbidity
+  standard_name: sea_water_turbidity
+  units: '1'
+  varname: turbidity
