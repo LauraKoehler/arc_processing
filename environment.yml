@@ -11,9 +11,8 @@ dependencies:
   - scipy
   - pyyaml
   - netcdf4
-  - datetime
-  - pysonde
   - dask
   - pip
   - pip:
     - pint_xarray
+    - pysonde
