@@ -33,3 +33,11 @@ shippy sections -i data/renamed/arc_radiosondes_level1_renamed.nc -o arc_radioso
 shippy rename -i data/radio_level2 -o data/renamed/arc_radiosondes_level2_renamed.nc -a shippy_settings/Radiosondes_variables_level2.yaml -d radiosondes
 shippy sections -i data/renamed/arc_radiosondes_level2_renamed.nc -o arc_radiosondes_level2.nc -s shippy_settings/radio_ARC_sections.txt -a shippy_settings/Radiosondes_level2_global_attrs.yaml -t start_time
 
+# UAV
+shippy rename -i data/uav_data.nc -o data/renamed/arc_uav_renamed.nc -a shippy_settings/UAV_variables.yaml -d uav
+shippy sections -i data/renamed/arc_uav_renamed.nc -o arc_uav.nc -s shippy_settings/ARC_sections.txt -t start_time
+
+# HATPRO
+shippy rename -i data/hatpro_data.nc -o data/renamed/arc_hatpro_renamed.nc -a shippy_settings/HATPRO_variables.yaml -d hatpro
+shippy sections -i data/renamed/arc_hatpro_renamed.nc -o arc_hatpro.nc -s shippy_settings/hatrpo_ARC_sections.txt
+

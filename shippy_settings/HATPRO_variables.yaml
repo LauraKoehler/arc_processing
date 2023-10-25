@@ -1,0 +1,83 @@
+absolute_humidity:
+  instrument: HATPRO
+  long_name: Absolute humidity
+  units: kg m-3
+  varname: ah
+altitude:
+  instrument: HATPRO
+  long_name: altitude above mean sea level of measurement station
+  standard_name: altitude
+  units: m
+  varname: alt_sensor
+azimuth_angle:
+  comment: 0=North, 90=East, 180=South, 270=West
+  instrument: HATPRO
+  long_name: sensor azimuth angle
+  standard_name: sensor_azimuth_angle
+  units: degree
+  varname: azimuth
+elevation_angle:
+  comment: 0=horizon, 90=zenith
+  instrument: HATPRO
+  long_name: sensor elevation angle
+  units: degree
+  varname: elevation
+equivalent_potential_temperature:
+  instrument: HATPRO
+  long_name: equivalent potential temperature
+  standard_name: air_equivalent_potential_temperature
+  units: K
+  varname: theta_e
+height:
+  instrument: HATPRO
+  long_name: altitude
+  standard_name: altitude
+  units: m
+  varname: alt
+iwv:
+  instrument: HATPRO
+  long_name: retrieved column-integrated water vapour
+  standard_name: atmosphere_mass_content_of_water_vapor
+  units: kg m-2
+  varname: iwv
+latitude:
+  instrument: HATPRO
+  long_name: latitude
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+longitude:
+  instrument: HATPRO
+  long_name: longitude
+  standard_name: longitude
+  units: degree_east
+  varname: lon
+lwp:
+  instrument: HATPRO
+  long_name: retrieved column-integrated liquid water path
+  standard_name: atmosphere_mass_content_of_cloud_liquid_water
+  units: kg m-2
+  varname: lwp
+lwp_offset:
+  instrument: HATPRO
+  long_name: Subtracted offset correction of liquid water path
+  units: kg m-2
+  varname: lwp_offset
+potential_temperature:
+  instrument: HATPRO
+  long_name: Potential temperature
+  standard_name: air_potential_temperature
+  units: K
+  varname: theta
+relative_humidity:
+  instrument: HATPRO
+  long_name: relative humidity
+  standard_name: relative_humidity
+  units: '1'
+  varname: rh
+temperature:
+  instrument: HATPRO
+  long_name: retrieved temperature profile (single pointing)
+  standard_name: air_temperature
+  units: K
+  varname: t_air
