@@ -17,17 +17,17 @@ The data from the different instruments has been standardised with the [shippy](
 
 The continuous measurements (Ship integrated sensors, Ceilometer, DustTrack) except the HATPRO contain data of the time period from 2023-01-25 07:00 until 2023-02-20 15:00 shown in orange. The start point is at 11.29˚N and 24.39˚W, the end point is at 47.48˚S and 60.62˚W. Quality controlled HATPRO data is available until 2023-02-15 00:00. The positions of the point measurements (Radiosondes, HATPRO, CTD, Calitoo, Microtops) are shown below. The equator was crossed three times during the cruise to get three complete profiles of the ITCZ which are marked by the coordinate "section" in the data sets. Section 0 corresponds to the times before the first crossing, section 1, 2, 3 correspond to crossings 1, 2, 3, respectively, and section 4 is everything after the third crossing. The insets are zooms in the marked rectangular regions.
 
-### Overview about sounding positions
+###  Positions of radiosonde launches and descents
 ![image](plots/MSM114-2_RS_positions.png)
 
 In total, 93 radiosondes were launched. Light green triangles show the positions of the radiosonde launches, dark green triangles show the position where the descent starts.
 
-### Overview about CTD and UAV positions
+### Positions of CTD and UAV 
 ![image](plots/MSM114-2_CTD_UAV_positions.png)
 
 Most of the time, CTDs were done twice a day (yellow triangles). When the (wind) conditions allowed for it, the UAVs were flown during the CTD times when the ship was not moving (orange triangles).
 
-### Overview about Microtops and Calitoo positions
+### Positions of Microtops and Calitoo
 ![image](plots/MSM114-2_Microtops_Calitoo_positions.png)
 
 Calitoo (red dots) and Microtops (blue points) measurements where done during the whole complete when the weather and conditions allowed. Microtops data was post processed by [NASA Aeronet Maritim Aerosol Network (MAN)](https://aeronet.gsfc.nasa.gov/new_web/maritime_aerosol_network_v3.html). 
@@ -35,6 +35,36 @@ Calitoo (red dots) and Microtops (blue points) measurements where done during th
 ## Minimal plotting examples
 
 ### Continuous measurements
+
+```python
+import xarray as xr
+import matplotlib.pyplot as plt
+
+dship = xr.open_dataset('arc_dship.nc')
+hatpro = xr.open_dataset('arc_hatpro.nc')
+dusttrak = xr.open_dataset('arc_dusttrak.nc')
+
+fig, axs = plt.subplots(3,1,figsize=(12,8),sharex=True)
+
+var_dict = {'dship': (dship, 't_air', axs[0], 'tab:blue'), 'hatpro': (hatpro, 'cwv', axs[1], 'skyblue'), 'dusttrak': (dusttrak, 'pm_all', axs[2], 'tab:green')}
+
+for i in var_dict.keys():
+    ds = var_dict[i][0]
+    var = var_dict[i][1]
+    a = var_dict[i][2]
+    color = var_dict[i][3]
+    ds[var].plot(ax = a, c = color)
+    a.set_title(ds[var].attrs['instrument'])
+
+for ax in axs:
+    ax.set_xlim(dship.time.min(), dship.time.max())
+    ax.set_xlabel('')
+axs[2].set_xlabel('time')
+
+plt.tight_layout()
+plt.savefig("ARC_Cont_obs.png", bbox_inches="tight")
+```
+![image](plots/ARC_Cont_obs.png)
 
 ### Radio soundings level 2 for crossing 1
 
