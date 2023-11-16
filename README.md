@@ -6,36 +6,33 @@ This repository contains references to the atmospheric measurements and their po
 
 The cruise started January 23, 2023 in Mindelo, Cape Verde and ended February 22, 2023 in Punta Arenas, Chile.
 
-Further general information about the cruise can be found in the [cruise report](https://www.ldf.uni-hamburg.de/merian/wochenberichte/wochenberichte-merian/msm114-msm118/scr-msm-114-2.pdf)
+Further general information about the cruise can be found in the [cruise report](https://www.ldf.uni-hamburg.de/merian/wochenberichte/wochenberichte-merian/msm114-msm118/scr-msm-114-2.pdf). The data is described in detail in this [paper](UPDATE).
 
-## Datasets
+## Data sets
+
+The data from the different instruments has been standardised with the [shippy](UPDATE) package to simplify the comparison between different instruments as much as possible. For reprocessing the data, use the python environment from `environment.yaml` and run `reprocess.sh`.
 
 ### Cruise track
 ![image](plots/MSM114-2_cruise_track.png)
 
-The continuous measurements (Ship integrated sensors, HATPRO, Ceilometer, DustTrack) contain data of the time period from 2023-01-25 07:00 until 2023-02-20 15:00. The start point is at 11.29˚N and 24.39˚W, the end point is at 47.48˚S and 60.62˚W. In between, the equator was crossed three times to get three complete profiles of the ITCZ which are marked by the coordinate "section" in the datasets. Section 0 corresponds to the times before the first crossing, section 1, 2, 3 correspond to crossings 1, 2, 3, respectively, and section 4 is everything after the third crossing.
+The continuous measurements (Ship integrated sensors, Ceilometer, DustTrack) except the HATPRO contain data of the time period from 2023-01-25 07:00 until 2023-02-20 15:00 shown in orange. The start point is at 11.29˚N and 24.39˚W, the end point is at 47.48˚S and 60.62˚W. Quality controlled HATPRO data is available until 2023-02-15 00:00. The positions of the point measurements (Radiosondes, HATPRO, CTD, Calitoo, Microtops) are shown below. The equator was crossed three times during the cruise to get three complete profiles of the ITCZ which are marked by the coordinate "section" in the data sets. Section 0 corresponds to the times before the first crossing, section 1, 2, 3 correspond to crossings 1, 2, 3, respectively, and section 4 is everything after the third crossing. The insets are zooms in the marked rectangular regions.
 
 ### Overview about sounding positions
 ![image](plots/MSM114-2_RS_positions.png)
 
-In total, 93 radiosondes were launched. Light green dots show the positions of the radiosonde launches, dark green dots show the position where the descent starts.
+In total, 93 radiosondes were launched. Light green triangles show the positions of the radiosonde launches, dark green triangles show the position where the descent starts.
 
 ### Overview about CTD and UAV positions
-![image](plots/MSM114-2_CTD_positions.png)
+![image](plots/MSM114-2_CTD_UAV_positions.png)
 
-Most of the time, CTDs were done twice a day (yellow dots). When the (wind) conditions allowed for it, the UAVs were flown during the CTD times when the ship was not moving (red dots).
+Most of the time, CTDs were done twice a day (yellow triangles). When the (wind) conditions allowed for it, the UAVs were flown during the CTD times when the ship was not moving (orange triangles).
 
-### Overview about Microtops positions
-![image](plots/MSM114-2_Microtops_positions.png)
+### Overview about Microtops and Calitoo positions
+![image](plots/MSM114-2_Microtops_Calitoo_positions.png)
 
-Microtops data was post processed by [NASA Aeronet Maritim Aerosol Network (MAN)](https://aeronet.gsfc.nasa.gov/new_web/maritime_aerosol_network_v3.html). 
+Calitoo (red dots) and Microtops (blue points) measurements where done during the whole complete when the weather and conditions allowed. Microtops data was post processed by [NASA Aeronet Maritim Aerosol Network (MAN)](https://aeronet.gsfc.nasa.gov/new_web/maritime_aerosol_network_v3.html). 
 
-### Overview about Calitoo positions
-![image](plots/MSM114-2_Calitoo_positions.png)
-
-Calitoo measurements where done during the whole complete when the weather and conditions allowed.
-
-## Minimal examples
+## Minimal plotting examples
 
 ### Continuous measurements
 
@@ -69,8 +66,6 @@ plt.savefig("ARC_RS_Level2_Crossing1.png", bbox_inches="tight")
 ```
 ![image](plots/ARC_RS_Level2_Crossing1.png)
 
-### UAV 
-
 ### CTD
 
 Plot CTD data for the first crossing if the ITCZ up to 500 m depth. The deeper CTDs up to 3793 m were done during section 2 and 4.
@@ -99,4 +94,4 @@ plt.savefig(f"ARC_RS_Level2_Crossing{crossing_number}.png", bbox_inches="tight")
 ```
 ![image](plots/ARC_CTD_Crossing1.png)
 
-### Calitoo and Microtops
+### Profile
