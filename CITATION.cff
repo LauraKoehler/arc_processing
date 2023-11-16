@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Köhler"
+  given-names: "Laura"
+title: "ARC: Processing of atmospheric and oceanographic measurements"
+repository-code: "https://github.com/LauraKoehler/arc_processing"
+abstract: "Scripts and shippy settings for processing the data collected during the ARC ship campaign."
+version: v1.0.0
+date-released: '2023-11-16'
