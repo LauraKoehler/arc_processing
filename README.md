@@ -1,4 +1,4 @@
-# Atmospheric measurements of ARC campaign (MSM 114/2)
+# ARC (MSM 114/2): Processing of atmospheric and oceanographic measurements
 [![Data](UPDATE)](UPDATE)
 
 This repository contains references to the atmospheric measurements and their post-processing steps of the cruise
