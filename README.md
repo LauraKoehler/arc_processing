@@ -36,6 +36,8 @@ Calitoo (red dots) and Microtops (blue points) measurements where done during th
 
 ### Continuous measurements
 
+Plot data from various continuously measuring instruments.
+
 ```python
 import xarray as xr
 import matplotlib.pyplot as plt
@@ -78,7 +80,7 @@ import matplotlib.pyplot as plt
 
 crossing_number = 1
 
-radio_level2 = xr.open_dataset('ARC_Radiosoundings_level2.nc')
+radio_level2 = xr.open_dataset('arc_radiosondes_level2.nc')
 crossing = radio_level2.groupby('section')
 
 freezing_alts = radio_level2.isel(alt = np.abs(radio_level2.t_air - 273.15).argmin(axis = 1)).alt
@@ -108,7 +110,7 @@ import matplotlib.pyplot as plt
 
 crossing_number = 1
 
-ctd = xr.open_dataset('ARC_CTD.nc')
+ctd = xr.open_dataset('arc_ctd.nc')
 crossing = ctd.groupby('section')
 
 vars_to_plot = ['p_sw', 'rho_sw', 't_sw', 'conductivity', 'salinity', 'oxygen', 'fluorescence', 'turbidity', 'nitrogen']
@@ -124,4 +126,40 @@ plt.savefig(f"ARC_RS_Level2_Crossing{crossing_number}.png", bbox_inches="tight")
 ```
 ![image](plots/ARC_CTD_Crossing1.png)
 
-### Profile
+### Profiles
+
+Plot data from instruments measuring profiles for the 3 ITCZ crossings.
+
+```python
+import xarray as xr
+import numpy as np
+import matplotlib.pyplot as plt
+
+radio = xr.open_dataset('arc_radiosondes_level2.nc')
+hatpro = xr.open_dataset('arc_hatpro.nc')
+uav = xr.open_dataset('arc_uav.nc')
+ctd = xr.open_dataset('arc_ctd.nc')
+
+fig, axs = plt.subplots(4, figsize=(12,8), sharex = True)
+
+var_dict = {'uav': (uav, 'q', axs[0], 'start_time'), 'hatpro': (hatpro, 'rh', axs[1], 'time'), 'radio': (radio, 'wspd', axs[2], 'start_time'), 'ctd': (ctd, 'fluorescence', axs[3], 'start_time')}
+
+for i in var_dict.keys():
+    ds = var_dict[i][0]
+    var = var_dict[i][1]
+    a = var_dict[i][2]
+    tname = var_dict[i][3]
+    ds[var].plot(ax = a, x = tname)
+    a.set_title(ds[var].attrs['instrument'])
+axs[2].set_ylim(0,23000)
+axs[3].set_ylim(500,0)
+    
+for ax in axs:
+    ax.set_xlim(np.datetime64('2023-01-26'), np.datetime64('2023-02-05'))
+    ax.set_xlabel('')
+axs[3].set_xlabel('time')
+
+plt.tight_layout()
+plt.savefig("ARC_Profiles.png", bbox_inches="tight")
+```
+![image](plots/ARC_Profiles.png)
