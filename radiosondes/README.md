@@ -10,7 +10,7 @@ Radiosonde data was processed with the [pysonde](https://github.com/observingClo
 
 ## Reprocessing radiosoundings
 
-By running `reproduce.sh` the level 1 and level 2 data can be reproduced. Output units, variable names, and global attributes can be setup with the yaml files in the `config` folder.
+By running `reprocess_mwx_convertion.sh` the level 1 and level 2 data can be reproduced. Output units, variable names, and global attributes can be setup with the yaml files in the `config` folder.
 
 To release a new version of the dataset, please make sure to adjust the DOI in `config/level1.yaml` and `config/level2.yaml`. DOI can be reserved before publishing at most DOI providers, e.g. at [zenodo.org](https://help.zenodo.org/) by creating a new record/version.
 

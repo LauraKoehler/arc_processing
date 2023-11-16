@@ -39,7 +39,7 @@ iwv:
   long_name: retrieved column-integrated water vapour
   standard_name: atmosphere_mass_content_of_water_vapor
   units: kg m-2
-  varname: iwv
+  varname: cwv
 latitude:
   instrument: HATPRO
   long_name: latitude

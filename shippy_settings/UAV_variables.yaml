@@ -1,0 +1,333 @@
+N_hoover_opc:
+  added_offset: 'False'
+  instrument: OPC-N3 (UAV)
+  long_name: OPC-N3 number of observations from hoovers used to derive bin averages
+    and standard deviations
+  standard_name: number_of_observations
+  units: '1'
+  varname: N_hoover_opc
+N_hoover_trisonica:
+  added_offset: 'False'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: Anemoment-TrisonicaMini number of observations from hoovers used to derive
+    bin averages and standard deviations
+  standard_name: number_of_observations
+  units: '1'
+  varname: N_hoover_trisonica
+N_imet:
+  added_offset: 'False'
+  instrument: iMet-XQ2 (UAV)
+  long_name: iMet-XQ2 number of observations used to derive bin averages and standard
+    deviations
+  standard_name: number_of_observations
+  units: '1'
+  varname: N_imet
+N_skh:
+  added_offset: 'False'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: Sparvio-SKH1 number of observations used to derive bin averages and standard
+    deviations
+  standard_name: number_of_observations
+  units: '1'
+  varname: N_skh
+N_trisonica:
+  added_offset: 'False'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: Anemoment-TrisonicaMini number of observations used to derive bin averages
+    and standard deviations
+  standard_name: number_of_observations
+  units: '1'
+  varname: N_trisonica
+flag_imet:
+  description: 1 for profiles with given sensor, 0 for other sensors
+  long_name: flag for imet measurements
+  units: '1'
+  varname: flag_imet
+flag_opc:
+  description: 1 for profiles with given sensor, 0 for other sensors
+  long_name: flag for opc measurements
+  units: '1'
+  varname: flag_opc
+flag_skh:
+  description: 1 for profiles with given sensor, 0 for other sensors
+  long_name: flag for skh measurements
+  units: '1'
+  varname: flag_skh
+flag_trisonica:
+  description: 1 for profiles with given sensor, 0 for other sensors
+  long_name: flag for trisonica measurements
+  units: '1'
+  varname: flag_trisonica
+lat:
+  instrument: UAV
+  long_name: latitude at which the profile started
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+lon:
+  instrument: UAV
+  long_name: longitude at which the profile started
+  standard_name: longitude
+  units: degree_east
+  varname: lon
+p_imet:
+  added_offset: 'True'
+  instrument: iMet-XQ2 (UAV)
+  long_name: air pressure
+  offset_type: constant
+  offset_value: 107
+  standard_name: air_pressure
+  units: Pa
+  varname: p_air
+p_imet_std:
+  added_offset: 'True'
+  instrument: iMet-XQ2 (UAV)
+  long_name: air pressure standard deviation
+  offset_type: constant
+  offset_value: 107
+  units: Pa
+  varname: p_air_std
+p_skh:
+  added_offset: 'True'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: air pressure
+  offset_type: constant
+  offset_value: 107
+  standard_name: air_pressure
+  units: Pa
+  varname: p_air_skh
+p_skh_std:
+  added_offset: 'True'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: air pressure standard deviation
+  offset_type: constant
+  offset_value: 107
+  units: Pa
+  varname: p_air_skh_std
+p_trisonica:
+  added_offset: 'True'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: air pressure
+  offset_type: constant
+  offset_value: 107
+  standard_name: air_pressure
+  units: Pa
+  varname: p_air_trisonica
+p_trisonica_std:
+  added_offset: 'True'
+  instrument: Anemoment-TrisonicaMini
+  long_name: air pressure standard deviation
+  offset_type: constant
+  offset_value: 107
+  units: Pa
+  varname: p_air_trisonica_std
+pm10_opc:
+  added_offset: 'False'
+  instrument: OPC-N3 (UAV)
+  long_name: mass concentration of PM10 ambient aerosol particles in air
+  standard_name: mass_concentration_of_pm10_ambient_aerosol_particles_in_air
+  units: kg m-3
+  varname: pm10
+pm10_opc_std:
+  added_offset: 'False'
+  instrument: OPC-N3 (UAV)
+  long_name: mass concentration of PM10 ambient aerosol particles in air standard
+    deviation
+  units: kg m-3
+  varname: pm10_std
+pm1_opc:
+  added_offset: 'False'
+  instrument: OPC-N3 (UAV)
+  long_name: mass concentration of PM1 ambient aerosol particles in air
+  standard_name: mass_concentration_of_pm1_ambient_aerosol_particles_in_air
+  units: kg m-3
+  varname: pm1
+pm1_opc_std:
+  added_offset: 'False'
+  instrument: OPC-N3 (UAV)
+  long_name: mass concentration of PM1 ambient aerosol particles in air standard deviation
+  units: kg m-3
+  varname: pm1_std
+pm2_5_opc:
+  added_offset: 'False'
+  instrument: OPC-N3 (UAV)
+  long_name: mass concentration of PM2.5 ambient aerosol particles in air
+  standard_name: mass_concentration_of_pm2p5_ambient_aerosol_particles_in_air
+  units: kg m-3
+  varname: pm2d5
+pm2_5_opc_std:
+  added_offset: 'False'
+  instrument: OPC-N3 (UAV)
+  long_name: mass concentration of PM2.5 ambient aerosol particles in air standard
+    deviation
+  units: kg m-3
+  varname: pm2d5_std
+q_imet:
+  added_offset: 'True'
+  instrument: iMet-XQ2 (UAV)
+  long_name: specific humidity
+  offset_type: Linear
+  offset_value: a*t+b, where (a,b) = (-0.77g/kg/day,20.03g/kg) before Feb 4,2023 and
+    (a,b)=(-0.13g/kg/day,7.23g/kg) after Feb 4, 2023; t is time in days since Jan
+    1, 2023 (DOY)
+  standard_name: specific_humidity
+  units: '1'
+  varname: q
+q_imet_std:
+  added_offset: 'True'
+  instrument: iMet-XQ2 (UAV)
+  long_name: iMet-XQ2 air specific humidity standard deviation
+  offset_type: Linear
+  offset_value: a*t+b, where (a,b) = (-0.77g/kg/day,20.03g/kg) before Feb 4,2023 and
+    (a,b)=(-0.13g/kg/day,7.23g/kg) after Feb 4, 2023; t is time in days since Jan
+    1, 2023 (DOY)
+  units: '1'
+  varname: q_std
+q_skh:
+  added_offset: 'False'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: specific humidity
+  standard_name: specific_humidity
+  units: '1'
+  varname: q_skh
+q_skh_std:
+  added_offset: 'False'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: specific humidity standard deviation
+  units: '1'
+  varname: q_skh_std
+q_trisonica:
+  added_offset: 'True'
+  instrument: Anemoment-TrisonicaMini
+  long_name: specific humidity
+  offset_type: constant
+  offset_value: 0
+  standard_name: specific_humidity
+  units: '1'
+  varname: q_trisonica
+q_trisonica_std:
+  added_offset: 'True'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: specific humidity standard deviation
+  offset_type: constant
+  offset_value: 0
+  units: '1'
+  varname: q_trisonica_std
+rh_imet:
+  added_offset: 'False'
+  instrument: iMet-XQ2 (UAV)
+  long_name: relative humidity
+  standard_name: relative_humidity
+  units: '1'
+  varname: rh
+rh_imet_std:
+  added_offset: 'False'
+  instrument: iMet-XQ2 (UAV)
+  long_name: relative humidity standard deviation
+  units: '1'
+  varname: rh_std
+rh_skh:
+  added_offset: 'True'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: relative humidity
+  offset_type: constant
+  offset_value: 0
+  standard_name: relative_humidity
+  units: '1'
+  varname: rh_skh
+rh_skh_std:
+  added_offset: 'True'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: relative humidity standard deviation
+  offset_type: constant
+  offset_value: 0
+  units: '1'
+  varname: rh_skh_std
+rh_trisonica:
+  added_offset: 'True'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: relative humidity
+  offset_type: constant
+  offset_value: 0
+  standard_name: relative_humidity
+  units: '1'
+  varname: rh_trisonica
+rh_trisonica_std:
+  added_offset: 'True'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: relative humidity standard deviation
+  offset_type: constant
+  offset_value: 0
+  units: '1'
+  varname: rh_trisonica_std
+t_imet:
+  added_offset: 'True'
+  instrument: iMet-XQ2 (UAV)
+  long_name: air temperature
+  offset_type: constant
+  offset_value: 0.25
+  standard_name: air_temperature
+  units: K
+  varname: t_air
+t_imet_std:
+  added_offset: 'True'
+  instrument: iMet-XQ2 (UAV)
+  long_name: air temperature standard deviation
+  offset_type: constant
+  offset_value: 0.25
+  units: K
+  varname: t_air_std
+t_skh:
+  added_offset: 'True'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: air temperature
+  offset_type: constant
+  offset_value: 0.25
+  standard_name: air_temperature
+  units: K
+  varname: t_air_skh
+t_skh_std:
+  added_offset: 'True'
+  instrument: Sparvio-SKH1 (UAV)
+  long_name: air temperature standard deviation
+  offset_type: constant
+  offset_value: 0.25
+  units: K
+  varname: t_air_skh_std
+t_trisonica:
+  added_offset: 'True'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: air temperature
+  offset_type: constant
+  offset_value: 0.25
+  standard_name: air_temperature
+  units: K
+  varname: t_air_trisonica
+t_trisonica_std:
+  added_offset: 'True'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: air temperature standard deviation
+  offset_type: constant
+  offset_value: 0.25
+  units: K
+  varname: t_air_trisonica_std
+wdir_trisonica:
+  added_offset: 'False'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: wind direction
+  standard_name: wind_from_direction
+  units: degree
+  varname: wdir
+wspd_trisonica:
+  added_offset: 'False'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: wind speed
+  standard_name: wind_speed
+  units: m s-1
+  varname: wspd
+wspd_trisonica_std:
+  added_offset: 'False'
+  instrument: Anemoment-TrisonicaMini (UAV)
+  long_name: wind speed standard deviation
+  units: m s-1
+  varname: wspd_std
