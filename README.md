@@ -123,7 +123,7 @@ for ax, var in zip(fig.get_axes(), vars_to_plot):
 plt.tight_layout()
 plt.savefig(f"plots/ARC_CTD_profiles.png", bbox_inches="tight")
 ```
-![image](ARC_CTD_profiles.png)
+![image](plots/ARC_CTD_profiles.png)
 
 ### Profiles
 
