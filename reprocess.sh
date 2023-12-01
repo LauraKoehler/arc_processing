@@ -17,7 +17,7 @@ shippy rename -i data/calitoo_data.nc -o data/renamed/arc_calitoo_renamed.nc -a 
 shippy sections -i data/renamed/arc_calitoo_renamed.nc -o arc_calitoo.nc -s shippy_settings/ARC_sections.txt -a shippy_settings/Calitoo_global_attrs.yaml
 
 # Microtops
-shippy rename -i data/microtops_data.lev15 -o data/renamed/arc_microtops_renamed.nc -a shippy_settings/Microtops_variables.yaml -d microtops
+shippy rename -i data/microtops_data.lev20 -o data/renamed/arc_microtops_renamed.nc -a shippy_settings/Microtops_variables.yaml -d microtops
 shippy sections -i data/renamed/arc_microtops_renamed.nc -o arc_microtops.nc -s shippy_settings/ARC_sections.txt -a shippy_settings/Microtops_global_attrs.yaml
 
 # CTD

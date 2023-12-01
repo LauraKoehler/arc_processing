@@ -100,7 +100,7 @@ plt.savefig("ARC_RS_Level2_Crossing1.png", bbox_inches="tight")
 
 ### CTD
 
-Plot CTD data for the first crossing if the ITCZ up to 500 m depth. The deeper CTDs up to 3793 m were done during section 2 and 4.
+Plot CTD data up to 500 m depth. The deeper CTDs up to 3793 m were done during section 2 and 4.
 
 ```python
 import xarray as xr
@@ -111,20 +111,19 @@ import matplotlib.pyplot as plt
 crossing_number = 1
 
 ctd = xr.open_dataset('arc_ctd.nc')
-crossing = ctd.groupby('section')
 
 vars_to_plot = ['p_sw', 'rho_sw', 't_sw', 'conductivity', 'salinity', 'oxygen', 'fluorescence', 'turbidity', 'nitrogen']
 
 fig, axs = plt.subplots(4,4,figsize=(17,9),sharex=True, sharey=True)
 
 for ax, var in zip(fig.get_axes(), vars_to_plot):
-    crossing[crossing_number][var].plot(x = 'start_time', ax = ax)
+    ctd[var].sel(depth = slice(None,501)).plot(x = 'start_time', ax = ax)
     ax.set_ylim(500,0)
     
 plt.tight_layout()
-plt.savefig(f"ARC_RS_Level2_Crossing{crossing_number}.png", bbox_inches="tight")
+plt.savefig(f"plots/ARC_CTD_profiles.png", bbox_inches="tight")
 ```
-![image](plots/ARC_CTD_Crossing1.png)
+![image](ARC_CTD_profiles.png)
 
 ### Profiles
 
