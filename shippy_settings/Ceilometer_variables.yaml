@@ -1,0 +1,98 @@
+base:
+  instrument: Ceilometer
+  long_name: baseline raw signal in photons per shot (b)
+  units: '1'
+  varname: base
+bcc:
+  instrument: Ceilometer
+  long_name: base cloud cover
+  standard_name: cloud_area_fraction_in_atmosphere_layer
+  units: '1'
+  varname: bcc
+beta_raw:
+  description: '((P_raw / lp) - b) / (cs * o(r) * p_calc) * r * r
+
+    with P_raw = sum(P_raw_hr) * range_gate_hr / range_gate'
+  instrument: Ceilometer
+  long_name: normalized range corrected signal
+  units: '1'
+  varname: beta_raw
+beta_raw_hr:
+  instrument: Ceilometer
+  long_name: 'normalized range corrected signal (high resolution)
+
+    ((P_raw_hr / lp) - b) / (cs * o(r) * p_calc) * r * r'
+  units: '1'
+  varname: beta_raw_hr
+cbe:
+  instrument: Ceilometer
+  long_name: cloud base height variation
+  units: m
+  varname: cbh_error
+cbh:
+  instrument: Ceilometer
+  long_name: cloud base height
+  standard_name: cloud_base_altitude
+  units: m
+  varname: cbh
+cde:
+  instrument: Ceilometer
+  long_name: cloud depth variation
+  units: m
+  varname: cdp_error
+cdp:
+  instrument: Ceilometer
+  long_name: cloud depth
+  units: m
+  varname: cdp
+lat:
+  instrument: Seapath (DShip)
+  long_name: latitude
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+lon:
+  instrument: Seapath (DShip)
+  long_name: longitude
+  standard_name: longitude
+  units: degree_east
+  varname: lon
+mxd:
+  instrument: Ceilometer
+  long_name: maximum detection height
+  units: m
+  varname: mxd
+pbl:
+  instrument: Ceilometer
+  long_name: aerosol layer in PBL
+  units: m
+  varname: pbl
+sci:
+  description: '0: nothing, 1: rain, 2: fog, 3: snow,
+
+    4: precipitation or particles on window'
+  instrument: Ceilometer
+  long_name: sky condition index
+  units: '1'
+  varname: sci
+stddev:
+  instrument: Ceilometer
+  long_name: standard deviation raw signal in photons per shot
+  units: '1'
+  varname: std
+tcc:
+  instrument: Ceilometer
+  long_name: total cloud cover
+  standard_name: cloud_area_fraction
+  units: '1'
+  varname: tcc
+voe:
+  instrument: Ceilometer
+  long_name: vertical optical range error
+  units: m
+  varname: vor_error
+vor:
+  instrument: Ceilometer
+  long_name: vertical optical range
+  units: m
+  varname: vor

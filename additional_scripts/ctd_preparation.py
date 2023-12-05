@@ -3,9 +3,9 @@ import numpy as np
 
 from datetime import datetime as dt
 
-indir = '/Users/laura/ownCloud/Campaigns/ARC/Datenpaper/Daten/CTD/Datenpaper'
-outfile = '/Users/laura/ownCloud/Campaigns/ARC/Datenpaper/Daten/CTD/ARC_CTD_prep.nc'
-dship = xr.open_dataset('/Users/laura/ownCloud/Campaigns/Data/DShip/Merian_DShip.nc')
+indir = 'data/ctd/'
+outfile = 'ARC_CTD_prep.nc'
+dship = xr.open_dataset('data/renamed/arc_dship_rename.nc')
 
 filenumbers = np.array([ '01',  '02',  '03',  '04',  '05',  '06',  '07', '09', '10', '11', '12', '13', '14', '15', '16', '17',
        '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34',
