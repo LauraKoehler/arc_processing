@@ -10,7 +10,7 @@ Further general information about the cruise can be found in the [cruise report]
 
 ## Data sets
 
-The data from the different instruments has been standardised with the [shippy](UPDATE) package to simplify the comparison between different instruments as much as possible. For reprocessing the data, use the python environment from `environment.yaml` and run `reprocess.sh`.
+The data from the different instruments has been standardised with the [shipspy](https://github.com/shipspy-development/shipspy) package to simplify the comparison between different instruments as much as possible. For reprocessing the data, use the python environment from `environment.yaml` and run `reprocess.sh`.
 
 ### Cruise track
 ![image](plots/MSM114-2_cruise_track.png)

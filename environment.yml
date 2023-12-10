@@ -1,4 +1,4 @@
-name: shippy-dev
+name: shipspy-dev
 channels:
   - conda-forge
 dependencies:

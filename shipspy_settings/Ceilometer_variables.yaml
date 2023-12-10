@@ -28,13 +28,25 @@ cbe:
   instrument: Ceilometer
   long_name: cloud base height variation
   units: m
-  varname: cbh_error
+  varname: cbh_layer_error
 cbh:
   instrument: Ceilometer
   long_name: cloud base height
   standard_name: cloud_base_altitude
   units: m
+  varname: cbh_layer
+cbh_1:
+  instrument: Ceilometer
+  long_name: first detected cloud base height
+  standard_name: cloud_base_altitude
+  units: m
   varname: cbh
+cbh_2s_1:
+  instrument: Ceilometer
+  long_name: first detected cloud base height (time dependent)
+  standard_name: cloud_base_altitude
+  units: m
+  varname: cbh_2s
 cde:
   instrument: Ceilometer
   long_name: cloud depth variation

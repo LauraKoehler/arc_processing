@@ -69,6 +69,12 @@ potential_temperature:
   standard_name: air_potential_temperature
   units: K
   varname: theta
+rainfall_rate:
+  instrument: HATPRO
+  long_name: rainfall rate
+  standard_name: rainfall_rate
+  units: m s-1
+  varname: rr
 relative_humidity:
   instrument: HATPRO
   long_name: relative humidity
