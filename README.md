@@ -1,8 +1,8 @@
-# ARC (MSM 114/2): Processing of atmospheric and oceanographic measurements
+# ARC (MSM114-2): Processing of atmospheric and oceanographic measurements
 [![Data](UPDATE)](UPDATE)
 
-This repository contains references to the atmospheric measurements and their post-processing steps of the cruise
-*Atlantic references and tropical Convection* or short *ARC*. This cruise undertaken on RV Maria S. Merian has the identifier MSM 114/2.
+This repository contains references to the atmospheric measurements and their post processing steps of the cruise
+*Atlantic references and tropical Convection* or short *ARC*. This cruise undertaken on RV Maria S. Merian has the identifier MSM114-2.
 
 The cruise started January 23, 2023 in Mindelo, Cape Verde and ended February 22, 2023 in Punta Arenas, Chile.
 
@@ -10,17 +10,17 @@ Further general information about the cruise can be found in the [cruise report]
 
 ## Data sets
 
-The data from the different instruments has been standardised with the [shipspy](https://github.com/shipspy-development/shipspy) package to simplify the comparison between different instruments as much as possible. For reprocessing the data, use the python environment from `environment.yaml` and run `reprocess.sh`.
+The data from the different instruments have been standardised with the [shipspy](https://github.com/shipspy-development/shipspy) package to simplify the comparison between different instruments as much as possible. For reprocessing the data, use the python environment from `environment.yaml` and run `reprocess.sh`.
 
 ### Cruise track
 ![image](plots/MSM114-2_cruise_track.png)
 
-The continuous measurements (Ship integrated sensors, Ceilometer, DustTrack) except the HATPRO contain data of the time period from 2023-01-25 07:00 until 2023-02-20 15:00 shown in orange. The start point is at 11.29˚N and 24.39˚W, the end point is at 47.48˚S and 60.62˚W. Quality controlled HATPRO data is available until 2023-02-15 00:00. The positions of the point measurements (Radiosondes, HATPRO, CTD, Calitoo, Microtops) are shown below. The equator was crossed three times during the cruise to get three complete profiles of the ITCZ which are marked by the coordinate "section" in the data sets. Section 0 corresponds to the times before the first crossing, section 1, 2, 3 correspond to crossings 1, 2, 3, respectively, and section 4 is everything after the third crossing. The insets are zooms in the marked rectangular regions.
+The continuous measurements (ship integrated sensors, Ceilometer, DustTrack) except the HATPRO contain data of the time period from 2023-01-25 07:00 until 2023-02-20 15:00 shown by the black trajectory. The insets are zooms in the marked rectangular regions. The start point is at 11.29˚N and 24.39˚W, the end point is at 47.48˚S and 60.62˚W. Quality controlled HATPRO data is available until 2023-02-15 00:00. The positions of the point measurements (Radiosondes, HATPRO, CTD, Calitoo, Microtops) are shown below. The equator was crossed three times during the cruise to get three complete profiles of the ITCZ which are marked by the coordinate "section" in the data sets. Section 0 corresponds to the times before the first crossing, section 1, 2, 3 corresponds to crossing 1, 2, 3, respectively, and section 4 is everything after the third crossing. 
 
 ###  Positions of radiosonde launches and descents
 ![image](plots/MSM114-2_RS_positions.png)
 
-In total, 93 radiosondes were launched. Light green triangles show the positions of the radiosonde launches, dark green triangles show the position where the descent starts.
+In total, 93 radiosondes were launched. Light green triangles show the positions of the radiosonde launches, dark green triangles show the position where the descents started.
 
 ### Positions of CTD and UAV 
 ![image](plots/MSM114-2_CTD_UAV_positions.png)
@@ -30,7 +30,7 @@ Most of the time, CTDs were done twice a day (yellow triangles). When the (wind)
 ### Positions of Microtops and Calitoo
 ![image](plots/MSM114-2_Microtops_Calitoo_positions.png)
 
-Calitoo (red dots) and Microtops (blue points) measurements where done during the whole complete when the weather and conditions allowed. Microtops data was post processed by [NASA Aeronet Maritim Aerosol Network (MAN)](https://aeronet.gsfc.nasa.gov/new_web/maritime_aerosol_network_v3.html). 
+Calitoo (red dots) and Microtops (blue points) measurements where done during the whole campaign when the weather allowed. Aerosol optical thicknesses can only be derived under cloud-free conditions. Microtops data were post processed by [NASA Aeronet Maritim Aerosol Network (MAN)](https://aeronet.gsfc.nasa.gov/new_web/maritime_aerosol_network_v3.html). 
 
 ## Minimal plotting examples
 
@@ -68,9 +68,9 @@ plt.savefig("ARC_Cont_obs.png", bbox_inches="tight")
 ```
 ![image](plots/ARC_Cont_obs.png)
 
-### Radio soundings level 2 for crossing 1
+### Radiosondes (level 2) for crossing 1
 
-Plot level 2 radio soundings with freezing level (light blue line) for the first crossing if the ITCZ.
+Plot level 2 radio soundings with freezing level (light blue line) for the first crossing of the ITCZ.
 
 ```python
 import xarray as xr
@@ -100,7 +100,7 @@ plt.savefig("ARC_RS_Level2_Crossing1.png", bbox_inches="tight")
 
 ### CTD
 
-Plot CTD data up to 500 m depth. The deeper CTDs up to 3793 m were done during section 2 and 4.
+Plot CTD data up to 500 m depth. The two deeper CTDs up to 3793 m were done during section 2 and 4.
 
 ```python
 import xarray as xr
@@ -127,7 +127,7 @@ plt.savefig(f"plots/ARC_CTD_profiles.png", bbox_inches="tight")
 
 ### Profiles
 
-Plot data from instruments measuring profiles for the 3 ITCZ crossings.
+Plot data from instruments measuring profiles for the three ITCZ crossings.
 
 ```python
 import xarray as xr
