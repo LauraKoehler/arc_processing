@@ -1,19 +1,19 @@
 PM1:
-  cell_method: minutely mean
+  cell_method: 1-minute mean
   instrument: DustTrak
   long_name: mass concentration of PM1 ambient aerosol particles in air (sensor height)
   standard_name: mass_concentration_of_pm1_ambient_aerosol_particles_in_air
   units: kg m-3
   varname: pm1
 PM10:
-  cell_method: minutely mean
+  cell_method: 1-minute mean
   instrument: DustTrak
   long_name: mass concentration of PM10 ambient aerosol particles in air (sensor height)
   standard_name: mass_concentration_of_pm10_ambient_aerosol_particles_in_air
   units: kg m-3
   varname: pm10
 PM2_5:
-  cell_method: minutely mean
+  cell_method: 1-minute mean
   instrument: DustTrak
   long_name: mass concentration of PM2.5 ambient aerosol particles in air (sensor
     height)
@@ -21,20 +21,20 @@ PM2_5:
   units: kg m-3
   varname: pm2d5
 PM4:
-  cell_method: minutely mean
+  cell_method: 1-minute mean
   instrument: DustTrak
   long_name: mass concentration of PM4 ambient aerosol particles in air (sensor height)
   units: kg m-3
   varname: pm4
 TOTAL:
-  cell_method: minutely mean
+  cell_method: 1-minute mean
   instrument: DustTrak
   long_name: mass concentration of ambient aerosol particles in air (sensor height)
   units: kg m-3
   varname: pm_all
 latitude:
   axis: Y
-  cell_method: minutely mean
+  cell_method: 1-minute mean
   instrument: DustTrak
   long_name: latitude
   standard_name: latitude
@@ -42,7 +42,7 @@ latitude:
   varname: lat
 longitude:
   axis: X
-  cell_method: minutely mean
+  cell_method: 1-minute mean
   instrument: DustTrak
   long_name: longitude
   standard_name: longitude
