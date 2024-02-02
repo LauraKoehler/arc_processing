@@ -1,4 +1,4 @@
-# ARC (MSM114-2): Processing of atmospheric and oceanographic measurements
+# MSM114/2 (ARC): Processing of atmospheric and oceanographic measurements
 [![Data](UPDATE)](UPDATE)
 
 This repository contains references to the atmospheric measurements and their post processing steps of the cruise
