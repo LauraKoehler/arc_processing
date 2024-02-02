@@ -1,4 +1,8 @@
-authors: Bertrand Lobo and Timo Nischik
-institution: HafenCity University Hamburg
-source: CTD
-title: CTD data of ARC campaign
+title: MSM114/2 (ARC) campaign CTD data
+authors: Betrand Lobo, Timo Nischik, and Laura Köhler
+institutions: HafenCity University Hamburg (HCU), Max Planck Institute for Meteorology
+contact: Betrand Lobo (bertrand.lobo@hcu-hamburg.de)
+instrument: CTD
+platform: RV Maria S. Merian
+conventions: CF-1.7
+version: v1.0.1

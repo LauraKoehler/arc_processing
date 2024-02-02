@@ -6,11 +6,11 @@ conda activate shipspy-dev
 
 # DShip
 shipspy dship -i data/dship_data.txt -o data/renamed/arc_dship_renamed.nc -a shipspy_settings/DShip_variables.yaml -s Merian
-shipspy sections -i data/renamed/arc_dship_renamed.nc -o arc_dship.nc -s shipspy_settings/ARC_sections.txt 
+shipspy sections -i data/renamed/arc_dship_renamed.nc -o arc_dship.nc -s shipspy_settings/ARC_sections.txt -a shipspy_settings/DShip_global_attrs.yaml
 
 # DustTrak
 shipspy rename -i data/dusttrak_data.nc -o data/renamed/arc_dusttrak_renamed.nc -a shipspy_settings/DustTrak_variables.yaml -d dusttrak
-shipspy sections -i data/renamed/arc_dusttrak_renamed.nc -o arc_dusttrak.nc -s shipspy_settings/ARC_sections.txt 
+shipspy sections -i data/renamed/arc_dusttrak_renamed.nc -o arc_dusttrak.nc -s shipspy_settings/ARC_sections.txt -a shipspy_settings/DustTrak_global_attrs.yaml
 
 # Calitoo
 shipspy rename -i data/calitoo_data.nc -o data/renamed/arc_calitoo_renamed.nc -a shipspy_settings/Calitoo_variables.yaml -d calitoo
@@ -35,14 +35,18 @@ shipspy sections -i data/renamed/arc_radiosondes_level2_renamed.nc -o arc_radios
 
 # UAV
 shipspy rename -i data/uav_data.nc -o data/renamed/arc_uav_renamed.nc -a shipspy_settings/UAV_variables.yaml -d uav
-shipspy sections -i data/renamed/arc_uav_renamed.nc -o arc_uav.nc -s shipspy_settings/ARC_sections.txt -t start_time
+shipspy sections -i data/renamed/arc_uav_renamed.nc -o arc_uav.nc -s shipspy_settings/ARC_sections.txt -t start_time -a shipspy_settings/UAV_global_attrs.yaml
 
 # HATPRO
 shipspy rename -i data/hatpro_data.nc -o data/renamed/arc_hatpro_renamed.nc -a shipspy_settings/HATPRO_variables.yaml -d hatpro
-shipspy sections -i data/renamed/arc_hatpro_renamed.nc -o arc_hatpro.nc -s shipspy_settings/hatrpo_ARC_sections.txt
+shipspy sections -i data/renamed/arc_hatpro_renamed.nc -o arc_hatpro.nc -s shipspy_settings/hatrpo_ARC_sections.txt -a shipspy_settings/HATPRO_global_attrs.yaml
 
 # Ceilometer
 python additional_scripts/ceilometer_preparation.py
 shipspy rename -i data/ceilometer_data.nc -o data/renamed/arc_ceilometer_renamed.nc -a shipspy_settings/Ceilometer_variables.yaml -d ceilometer
 shipspy sections -i data/renamed/arc_ceilometer_renamed.nc -o arc_ceilometer.nc -s shipspy_settings/ceilometer_ARC_sections.txt -a shipspy_settings/Ceilometer_global_attrs.yaml
 
+# UAV ocean
+python additional_scripts/uav_ocean.py
+shipspy rename -i data/uav_ocean_data_pos.nc -o data/renamed/arc_uav_ocean_renamed.nc -a shipspy_settings/UAV_ocean_variables.yaml -d uav_ocean
+shipspy sections -i data/renamed/arc_uav_ocean_renamed.nc -o arc_uav_ocean.nc -s shipspy_settings/ARC_sections.txt -t start_time -a shipspy_settings/UAV_ocean_global_attrs.yaml

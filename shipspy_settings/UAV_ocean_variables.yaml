@@ -1,0 +1,41 @@
+N_RBR:
+  instrument: RBR_solo_T (UAV)
+  long_name: number of observations used to derive bin averages and standard deviations
+  standard_name: number_of_observations
+  units: '1'
+  varname: N_rbr
+depth:
+  instrument: DJI Mavic (UAV)
+  long_name: depth
+  positive: down
+  source: derived from UAV altitude data assuming that last point of each cast was
+    at -0.1m depth
+  span: '[0.25, 14.75]'
+  standard_name: depth
+  units: m
+  varname: depth
+lat:
+  axis: Y
+  instrument: Seapath (DShip)
+  long_name: latitude
+  standard_name: latitude
+  units: degree_north
+  varname: lat
+lon:
+  axis: X
+  instrument: Seapath (DShip)
+  long_name: longitude
+  standard_name: longitude
+  units: degree_east
+  varname: lon
+t_sw:
+  instrument: RBR_solo_T (UAV)
+  long_name: sea water temperature
+  standard_name: sea_water_temperature
+  units: K
+  varname: t_sw
+t_sw_std:
+  instrument: RBR_solo_T (UAV)
+  long_name: sea water temperature standard deviation
+  units: K
+  varname: t_sw_std

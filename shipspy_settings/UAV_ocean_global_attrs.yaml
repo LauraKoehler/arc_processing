@@ -1,0 +1,11 @@
+title: MSM114/2 (ARC) campaign UAV oceanic level 2 data
+authors: Dariusz Baranowski, Michał Brennek, Daniel Kepski, Beata Latos, and Laura Köhler
+institutions: Institute of Geophysics Polish Academy of Sciences, Max Planck Institute for Meteorology
+contact: Dariusz Baranowski (dbaranowski@igf.edu.pl)
+instrument: UAV
+platform: RV Maria S. Merian
+conventions: CF-1.7
+version: v1.0.0
+bin_method: Average of all casts collected during a single UAV flight
+depth_method: Derived from UAV altitude data
+funding: Poland's National Science Centre grants 2019/35/B/ST10/03463

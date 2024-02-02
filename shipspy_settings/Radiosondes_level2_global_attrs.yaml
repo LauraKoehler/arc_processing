@@ -1,5 +1,8 @@
+title: MSM114/2 (ARC) campaign Radiosonde level 2 data
 authors: Laura Köhler and Julia Windmiller
-institution: Max Planck Institute of Meteorology
-platform: MSM
-title: Radiosonde level 1 data of ARC campaign
+institutions: Max Planck Institute for Meteorology
+contact: Laura Köhler (laura.koehler@awi.de)
 instrument: Radiosonde RS41-SGP by Vaisala
+platform: RV Maria S. Merian
+conventions: CF-1.7
+version: v1.0.0

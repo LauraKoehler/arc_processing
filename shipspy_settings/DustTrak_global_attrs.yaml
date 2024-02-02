@@ -1,8 +1,8 @@
-title: MSM114/2 (ARC) campaign Calitoo data
+title: MSM114/2 (ARC) campaign DustTrak data
 authors: Piet Stammes, Olaf Tuinder, and Laura Köhler
 institutions: Royal Netherlands Meteorological Institute (KNMI), Max Planck Institute for Meteorology
 contact: Piet Stammes (piet.stammes@knmi.nl) and Olaf Tuinder (olaf.tuinder@knmi.nl)
-instrument: Calitoo
+instrument: DustTrak
 platform: RV Maria S. Merian
 conventions: CF-1.7
 version: v1.0.0

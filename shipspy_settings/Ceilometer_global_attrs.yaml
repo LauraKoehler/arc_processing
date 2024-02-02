@@ -1,9 +1,8 @@
-authors: "Laura K\xF6hler and Julia Windmiller"
-device_name: CHM140102
-institution: Max Planck Institute for Meteorology
-platform: MSM
-serlom: TUB140008
-software_version: 12.12.1 2.13 1.080 0
-source: CHM140102
-title: Ceilometer data of ARC campaign
-year: 2023
+title: Ceilometer data of the MSM114-2 (ARC) campaign
+authors: Laura Köhler, Friedhelm Jansen, and Julia Windmiller
+institutions: Max Planck Institute for Meteorology
+contact: Laura Köhler (laura.koehler@awi.de)
+instrument: Ceilometer
+platform: RV Maria S. Merian
+conventions: CF-1.7
+version: v1.0.1

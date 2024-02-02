@@ -1,3 +1,8 @@
-institution: NASA Aeronet (Maritime Aerosol Network)
+title: MSM114/2 (ARC) campaign Microtops level 2 data
+authors: Stefan Kinne, Alexander Smirnov, Pawan Gupta, Eleną Lind, and Laura Köhler
+institutions: NASA Aeronet (Maritime Aerosol Network), Max Planck Institute for Meteorology
 source: 'NASA MAN microtops, Aeronet numer: 22502 (https://aeronet.gsfc.nasa.gov/new_web/maritime_aerosol_network_v3.html)'
-title: Microtops data from ARC campaign
+instrument: Microtops
+platform: RV Maria S. Merian
+conventions: CF-1.7
+version: v1.0.0

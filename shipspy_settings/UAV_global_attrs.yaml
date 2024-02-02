@@ -1,0 +1,10 @@
+title: MSM114/2 (ARC) campaign UAV atmospheric level 2 data
+authors: Dariusz Baranowski, Michał Brennek, Michał Ciuryło, Daniel Kepski, Beata Latos, Aleksander Pietruczuk, Artur Szkop, and Laura Köhler
+institutions: Institute of Geophysics Polish Academy of Sciences, Max Planck Institute for Meteorology
+contact: Dariusz Baranowski (dbaranowski@igf.edu.pl)
+instrument: UAV
+platform: RV Maria S. Merian
+conventions: CF-1.7
+version: v1.0.0
+offset_formula: Variable_offset = Variable_measured + offset; offsets determined via cross calibration with on-board AWS measurements (DSHIP data)
+funding: Poland's National Science Centre grants 2019/35/B/ST10/03463 (temperature, humidity, winds) and 2021/41/B/ST10/03660 (PMs)
