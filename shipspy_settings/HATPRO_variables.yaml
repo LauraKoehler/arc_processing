@@ -20,6 +20,7 @@ elevation_angle:
   comment: 0=horizon, 90=zenith
   instrument: HATPRO
   long_name: sensor elevation angle
+  standard_name: solar_elevation_angle
   units: degree
   varname: elevation
 equivalent_potential_temperature:
@@ -41,12 +42,14 @@ iwv:
   units: kg m-2
   varname: cwv
 latitude:
+  axis: Y
   instrument: HATPRO
   long_name: latitude
   standard_name: latitude
   units: degree_north
   varname: lat
 longitude:
+  axis: X
   instrument: HATPRO
   long_name: longitude
   standard_name: longitude

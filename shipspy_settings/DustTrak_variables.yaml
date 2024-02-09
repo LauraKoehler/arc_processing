@@ -24,12 +24,14 @@ PM4:
   cell_method: 1-minute mean
   instrument: DustTrak
   long_name: mass concentration of PM4 ambient aerosol particles in air (sensor height)
+  standard_name: mass_concentration_of_pm4_ambient_aerosol_particles_in_air
   units: kg m-3
   varname: pm4
 TOTAL:
   cell_method: 1-minute mean
   instrument: DustTrak
   long_name: mass concentration of ambient aerosol particles in air (sensor height)
+  standard_name: mass_concentration_of_ambient_aerosol_particles_in_air
   units: kg m-3
   varname: pm_all
 latitude:

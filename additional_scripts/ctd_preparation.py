@@ -5,7 +5,7 @@ from datetime import datetime as dt
 
 indir = 'data/ctd/'
 outfile = 'ARC_CTD_prep.nc'
-dship = xr.open_dataset('data/renamed/arc_dship_rename.nc')
+dship = xr.open_dataset('data/renamed/arc_dship_renamed.nc')
 
 filenumbers = np.array([ '01',  '02',  '03',  '04',  '05',  '06',  '07', '09', '10', '11', '12', '13', '14', '15', '16', '17',
        '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34',
@@ -27,5 +27,7 @@ for fn in filenumbers:
 ctd_data = ctd_data.assign_coords(lat = ('start_time', dship.sel(time = ctd_data.start_time, method = 'nearest').lat.values))
 ctd_data = ctd_data.assign_coords(lon = ('start_time', dship.sel(time = ctd_data.start_time, method = 'nearest').lon.values))
 ctd_data = ctd_data.drop(['LATITUDE', 'LONGITUDE'])
+
+ctd_data["start_time"].attrs["long_name"] = "time at which the CTD started"
 
 ctd_data.to_netcdf(outfile)

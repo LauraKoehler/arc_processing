@@ -1,8 +1,8 @@
-title: Ceilometer data of the MSM114-2 (ARC) campaign
+title: MSM114/2 (ARC) campaign Ceilometer data
 authors: Laura Köhler, Friedhelm Jansen, and Julia Windmiller
 institutions: Max Planck Institute for Meteorology
 contact: Laura Köhler (laura.koehler@awi.de)
 instrument: Ceilometer
 platform: RV Maria S. Merian
 conventions: CF-1.7
-version: v1.0.1
+version: v1.0.0

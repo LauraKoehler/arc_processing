@@ -24,10 +24,10 @@ alt_bnds:
   varname: alt_bnds
 ascent_flag:
   flag_meanings: ascending descending
-  flag_values: '[1,0]'
+  flag_values: '[0,1]'
   long_name: indicator of vertical flight direction
   units: '1'
-  varname: ascent_flag
+  varname: descent_flag
 dp:
   instrument: Vaisala RS41
   long_name: dew point temperature

@@ -59,12 +59,14 @@ flag_trisonica:
   units: '1'
   varname: flag_trisonica
 lat:
+  axis: Y
   instrument: UAV
   long_name: latitude at which the profile started
   standard_name: latitude
   units: degree_north
   varname: lat
 lon:
+  axis: X
   instrument: UAV
   long_name: longitude at which the profile started
   standard_name: longitude
