@@ -4,5 +4,7 @@ institutions: HafenCity University Hamburg (HCU), Max Planck Institute for Meteo
 contact: Betrand Lobo (bertrand.lobo@hcu-hamburg.de)
 instrument: CTD
 platform: RV Maria S. Merian
+doi: https://doi.pangaea.de/10.1594/PANGAEA.966643
 conventions: CF-1.7
 version: v1.0.1
+comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616

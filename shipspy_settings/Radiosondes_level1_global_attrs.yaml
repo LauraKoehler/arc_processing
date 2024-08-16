@@ -4,5 +4,7 @@ institutions: Max Planck Institute for Meteorology, University of Cologne
 contact: Laura Köhler (laura.koehler@awi.de)
 instrument: Radiosonde RS41-SGP by Vaisala
 platform: RV Maria S. Merian
+doi: https://doi.pangaea.de/10.1594/PANGAEA.966638
 conventions: CF-1.7
 version: v1.0.0
+comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616

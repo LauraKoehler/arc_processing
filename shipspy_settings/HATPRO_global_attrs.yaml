@@ -4,5 +4,7 @@ institutions: University of Cologne, Max Planck Institute for Meteorology
 contact: Tobias Marke (tmarke@meteo.uni-koeln.de)
 instrument: HATPRO
 platform: RV Maria S. Merian
+doi: https://doi.pangaea.de/10.1594/PANGAEA.966618
 conventions: CF-1.7
 version: v1.0.0
+comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616

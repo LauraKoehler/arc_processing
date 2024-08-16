@@ -4,6 +4,7 @@ institutions: Institute of Geophysics Polish Academy of Sciences, Max Planck Ins
 contact: Dariusz Baranowski (dbaranowski@igf.edu.pl)
 instrument: UAV
 platform: RV Maria S. Merian
+doi: https://doi.pangaea.de/10.1594/PANGAEA.966642
 conventions: CF-1.7
 version: v1.0.0
 bin_method: Average of all casts collected during a single UAV flight

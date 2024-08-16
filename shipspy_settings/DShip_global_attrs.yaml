@@ -4,5 +4,7 @@ institution: Max Planck Institute for Meteorology
 contact: Laura Köhler (laura.koehler@awi.de)
 instrument: DShip
 platform: RV Maria S. Merian
+doi: https://doi.pangaea.de/10.1594/PANGAEA.966617
 conventions: CF-1.7
 version: v1.0.0
+comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616
