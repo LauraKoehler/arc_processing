@@ -4,9 +4,12 @@ institutions: Institute of Geophysics Polish Academy of Sciences, Max Planck Ins
 contact: Dariusz Baranowski (dbaranowski@igf.edu.pl)
 instrument: UAV
 platform: RV Maria S. Merian
-doi: https://doi.pangaea.de/10.1594/PANGAEA.966642
+doi: https://doi.org/10.1594/PANGAEA.966642
 conventions: CF-1.7
 version: v1.0.0
 bin_method: Average of all casts collected during a single UAV flight
 depth_method: Derived from UAV altitude data
 funding: Poland's National Science Centre grants 2019/35/B/ST10/03463
+reference: "Baranowski, Dariusz B; Brennek, Michał; Kepski, Daniel; Latos, Beata; Köhler, Laura (2024): Uncrewed Aircraft Vehicle (UAV) flight oceanic measurements in NetCDF format gathered during MARIA S. MERIAN cruise MSM114/2 (ARC) [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.966642"
+year: 2024
+comment: part of https://doi.org/10.1594/PANGAEA.966616

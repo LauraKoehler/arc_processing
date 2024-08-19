@@ -4,7 +4,9 @@ institutions: Royal Netherlands Meteorological Institute (KNMI), Max Planck Inst
 contact: Piet Stammes (piet.stammes@knmi.nl) and Olaf Tuinder (olaf.tuinder@knmi.nl)
 instrument: DustTrak
 platform: RV Maria S. Merian
-doi: https://doi.pangaea.de/10.1594/PANGAEA.966621
+doi: https://doi.org/10.1594/PANGAEA.966621
 conventions: CF-1.7
 version: v1.0.0
-comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616
+reference: "Stammes, Piet; Tuinder, Olaf; Köhler, Laura (2024): Ambient aerosol (DustTrak) measurements in NetCDF format gathered during MARIA S. MERIAN cruise MSM114/2 (ARC) [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.966621"
+year: 2024
+comment: part of https://doi.org/10.1594/PANGAEA.966616

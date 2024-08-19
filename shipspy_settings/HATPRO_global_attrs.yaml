@@ -4,7 +4,9 @@ institutions: University of Cologne, Max Planck Institute for Meteorology
 contact: Tobias Marke (tmarke@meteo.uni-koeln.de)
 instrument: HATPRO
 platform: RV Maria S. Merian
-doi: https://doi.pangaea.de/10.1594/PANGAEA.966618
+doi: https://doi.org/10.1594/PANGAEA.966618
 conventions: CF-1.7
 version: v1.0.0
-comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616
+reference: "Hayo, Lennéa; Marke, Tobias; Paul, Daria; Köhler, Laura (2024): HATPRO (Humidity and Temperature PROfiler) measurements in NetCDF format gathered during MARIA S. MERIAN cruise MSM114/2 (ARC) [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.966618"
+year: 2024
+comment: part of https://doi.org/10.1594/PANGAEA.966616

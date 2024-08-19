@@ -4,7 +4,9 @@ institutions: NASA Aeronet (Maritime Aerosol Network), Max Planck Institute for 
 source: 'NASA MAN microtops, Aeronet numer: 22502 (https://aeronet.gsfc.nasa.gov/new_web/maritime_aerosol_network_v3.html)'
 instrument: Microtops
 platform: RV Maria S. Merian
-doi: https://doi.pangaea.de/10.1594/PANGAEA.966645
+doi: https://doi.org/10.1594/PANGAEA.966645
 conventions: CF-1.7
 version: v1.0.0
-comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616
+reference: "Kinne, Stefan; Köhler, Laura (2024): Sunphotometer (Microtops) measurements in NetCDF format gathered during MARIA S. MERIAN cruise MSM114/2 (ARC) [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.966645"
+year: 2024
+comment: part of https://doi.org/10.1594/PANGAEA.966616

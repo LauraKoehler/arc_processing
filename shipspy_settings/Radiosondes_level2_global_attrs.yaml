@@ -4,7 +4,9 @@ institutions: Max Planck Institute for Meteorology, University of Cologne
 contact: Laura Köhler (laura.koehler@awi.de)
 instrument: Radiosonde RS41-SGP by Vaisala
 platform: RV Maria S. Merian
-doi: https://doi.pangaea.de/10.1594/PANGAEA.966637
+doi: https://doi.org/10.1594/PANGAEA.966637
 conventions: CF-1.7
 version: v1.0.0
-comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616
+reference: "Köhler, Laura; Hayo, Lennéa; Paul, Daria; Windmiller, Julia (2024): Radiosonde level2 measurements in NetCDF format gathered during MARIA S. MERIAN cruise MSM114/2 (ARC) [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.966637"
+year: 2024
+comment: part of https://doi.org/10.1594/PANGAEA.966616

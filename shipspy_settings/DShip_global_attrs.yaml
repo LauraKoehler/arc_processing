@@ -7,4 +7,6 @@ platform: RV Maria S. Merian
 doi: https://doi.pangaea.de/10.1594/PANGAEA.966617
 conventions: CF-1.7
 version: v1.0.0
-comment: part of https://doi.pangaea.de/10.1594/PANGAEA.966616
+reference: "Köhler, Laura; Windmiller, Julia (2024): DavisShip system (DShip) measurements in NetCDF format including weather station,  pure sea water system,  global radiation, wave monitoring system and navigation system gathered during MARIA S. MERIAN cruise MSM114/2 (ARC) [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.966617"
+year: 2024
+comment: part of https://doi.org/10.1594/PANGAEA.966617
