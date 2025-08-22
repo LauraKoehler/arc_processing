@@ -1,12 +1,12 @@
 # MSM114/2 (ARC): Processing of atmospheric and oceanographic measurements
-[![Data](UPDATE)](UPDATE)
+[![Data](https://doi.pangaea.de/10.1594/PANGAEA.966616)](https://doi.pangaea.de/10.1594/PANGAEA.966616)
 
 This repository contains references to the atmospheric measurements and their post processing steps of the cruise
 *Atlantic references and tropical Convection* or short *ARC*. This cruise undertaken on RV Maria S. Merian has the identifier MSM114-2.
 
 The cruise started January 23, 2023 in Mindelo, Cape Verde and ended February 22, 2023 in Punta Arenas, Chile.
 
-Further general information about the cruise can be found in the [cruise report](https://www.ldf.uni-hamburg.de/merian/wochenberichte/wochenberichte-merian/msm114-msm118/scr-msm-114-2.pdf). The data is described in detail in this [paper](UPDATE).
+Further general information about the cruise can be found in the [cruise report](https://www.ldf.uni-hamburg.de/merian/wochenberichte/wochenberichte-merian/msm114-msm118/scr-msm-114-2.pdf). The data is described in detail in [Köhler et al. (2025)](https://doi.org/10.5194/essd-17-633-2025).
 
 ## Data sets
 
