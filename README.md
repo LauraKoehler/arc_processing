@@ -1,5 +1,5 @@
 # MSM114/2 (ARC): Processing of atmospheric and oceanographic measurements
-[![Data](https://doi.pangaea.de/10.1594/PANGAEA.966616)](https://doi.pangaea.de/10.1594/PANGAEA.966616)
+[![DOI](https://img.shields.io/badge/DOI-10.1594%2FPANGAEA.966616-blue)](https://doi.pangaea.de/10.1594/PANGAEA.966616)
 
 This repository contains references to the atmospheric measurements and their post processing steps of the cruise
 *Atlantic references and tropical Convection* or short *ARC*. This cruise undertaken on RV Maria S. Merian has the identifier MSM114-2.
